@@ -53,7 +53,7 @@ const ChatBox = () => {
                 })}
             </Stack>
             <Stack direction="horizontal" gap='3' className="chat-input flex-grow-0">
-                <InputEmoji value={textMessage} onChange={setTextMessage} fontFamily="nunito" borderColor="rgba(72, 112, 223, 0.2)" />
+                <InputEmoji value={textMessage} className="overflow-anywhere" onChange={setTextMessage} fontFamily="nunito" borderColor="rgba(72, 112, 223, 0.2)" />
                 <Button className="send-btn" onClick={() => {
                     sendTextMessage(textMessage, user, currentChat._id, setTextMessage);
                 }}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-send-fill" viewBox="0 0 16 16">

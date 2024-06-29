@@ -81,6 +81,7 @@ body {
 .messages {
   max-height: calc(100vh - 15rem);
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 2rem;
   color: white;
 }
@@ -90,6 +91,7 @@ body {
   padding: 0.75rem;
   border-radius: 5px;
   max-width: 50%;
+  overflow-wrap: break-word;
 }
 
 .message.self {
@@ -204,4 +206,8 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+}
+
+.overflow-anywhere {
+  overflow-wrap: anywhere !important;
 }
